@@ -18,11 +18,9 @@ I started out building a ruby utility for parsing API messages and downloading f
 
 http://github.com/hybernaut/rubber_tracks
 
-Unfortunately I was working on the assumption that all samples would be organized in packages, but many of the samples I examined did not contain package references.
+Not many people know this, but the Ableton ADG file format used for drum racks and other saved presets is gzip xml, quite readable, and incredibly comprehensive. It should be easy to generate a file describing a drum rack which Ableton Live would accept, with links to the downloaded samples properly laid out on the grid.
 
-I also learned that the Ableton ADG file format is gzip xml, quite readable, and incredibly comprehensive. It should be easy to generate a file describing a drum rack which Ableton Live would accept, with links to the downloaded samples properly laid out on the grid.
-
-Unfortunately the ADG format uses a block of binary data in the <FileRef> element which I could not decipher, so I was unable to complete this part of the project.
+Unfortunately the ADG format uses a block of binary data in the <FileRef> element which I could not decipher, so I was unable to build an ADG file with a completed drum rack. Perhaps the way forward is to download all the samples, drag them all into a drum rack, then process the saved ADG file.
 
 URL:
 
